@@ -3,7 +3,7 @@ name: Build APK
 on:
   push:
     branches: [ master, main ]
-  workflow_dispatch:   # 允许手动触发（手机操作的关键）
+  workflow_dispatch:
 
 jobs:
   build:
@@ -22,7 +22,8 @@ jobs:
     - name: Setup Android SDK
       uses: android-actions/setup-android@v3
       with:
-        packages: 'platforms;android-34 build-tools;34.0.0'
+        api-level: 34
+        build-tools: 34.0.4
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
