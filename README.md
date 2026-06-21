@@ -63,8 +63,8 @@
 - [X] Linux rootfs (Ubuntu‑based)  
 
 ### ⌨️ Language Servers
-- [ ] Java  
-- [ ] Kotlin  
+- [X] Java  
+- [X] Kotlin  
 - [ ] XML  
 > Auto‑completion is under active development.
 
